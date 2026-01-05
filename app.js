@@ -20,6 +20,7 @@ document.querySelectorAll(".dish button").forEach(button => {
     let cart = JSON.parse(localStorage.getItem("cart")) || [];
     cart.push({ name, price: Number(price) });
     localStorage.setItem("cart", JSON.stringify(cart));
-    alert(`${name} added to cart!`);
+    alert(`${name} added successfully!`);
   });
 });
+
